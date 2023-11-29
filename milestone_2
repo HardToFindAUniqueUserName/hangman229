@@ -1,0 +1,26 @@
+# %%
+import random
+
+word_list = ["apple", "banana", "cherry", "date", "elderberry"]
+
+print(word_list)
+
+word = random.choice(word_list)
+
+print(word)
+
+while True:
+    guess = input("Please make your guess by entering a single letter: ")
+    if len(guess) == 1 and guess.isalpha():
+        print("Good guess")
+        break
+    else:
+        print("Oops! That is not a valid input")
+
+print(guess)
+
+# %%
+word = "Green"
+print("Y".isalpha())
+print(word.isalpha())
+# %%
