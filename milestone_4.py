@@ -30,8 +30,8 @@ class Hangman:
 
     """Methods"""
     def  check_guess(self, guess):
-      """check_guess - Checks to see if the guess letter is in the word. If so update word_guessed"""
-      # guess = guess.lower()
+      """check_guess - Checks to see if the guess letter is in the word. If so update word_guessed and inform user.
+      if not decrement num_lives and inform user"""
       if guess in self.word:
         print(f"Good guess! {guess} is in the word.")
         for i in range(len(self.word)):
@@ -56,7 +56,6 @@ class Hangman:
         else:
           self.check_guess(guess)
           self.list_of_guesses.append(guess)
-          # break
 
 
 hm1 = Hangman(word_list)
