@@ -61,7 +61,7 @@ class Hangman:
 
 """Functions:
    play_game(word_list)
-      Start and controle the game. Action termination (win/loose)
+      Start and controle the game. Action termination (win/lose)
 """
 def play_game(word_list):
   '''This function is used to start and manage the game. It starts and continues successive turns by asking for input.
@@ -84,7 +84,7 @@ def play_game(word_list):
 """ 
 if __name__ == '__main__':
     word_list = ["apple", "banana", "cherry", "date", "elderberry"]
-    """word_list: list - The list or woords from which the project will randomy choose a word to start the game"""
+    """word_list: list - The list or words from which the project will randomy choose a word to start the game"""
     play_game(word_list)
 
 
