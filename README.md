@@ -26,8 +26,15 @@ You win by correctly completing (guessing), the word. If your guess is incorrect
 You lose the game by running out of lives, before you have guessed the word.
 ___
 ## Project File Structure
-
+All code to run the game is contained within a single file (milestone_5.py).
+Imports: 'random'
 ___
 ## License
 This Hangman game is completely unlicensed and free for all to enjoy.
 The concept, design and code are free from any intellectual property claim.
+___
+## Lessons Learned
+- This project was developed in distinct sections, directly following the AiCore Portal project instructions. Thus, at the start, there was no clear definition of the end product.
+Next time, if guidance is provided (i.e., hangman/hangman_Template.py), read this and specify a design, before comencement of coding.
+
+-  When composing a README.md file via GitHub, remember to commit changes before browsing away from the page.
