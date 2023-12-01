@@ -36,9 +36,9 @@ class Hangman:
       if not decrement number_of_lives and inform user"""
       if guess in self.word:
         print(f"Good guess! {guess} is in the word.")
-        for i in range(len(self.word)):
-           if guess == self.word[i]:
-              self.word_guessed[i] = guess
+        for index in range(len(self.word)):
+           if guess == self.word[index]:
+              self.word_guessed[index] = guess
         self.number_of_letters -= 1
       else:
         self.number_of_lives -= 1
