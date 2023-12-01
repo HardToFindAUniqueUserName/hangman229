@@ -24,7 +24,7 @@ Follow the prompts to input single alphabetic letters. These selection are refer
 Continue to follow the prompts, until you win or lose the game.
 You win by correctly completing (guessing), the word. If your guess is incorrect, you lose a life.
 You lose the game by running out of lives, before you have guessed the word.
-
+___
 ## Project File Structure
 
 ___
