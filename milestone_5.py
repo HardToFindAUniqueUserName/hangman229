@@ -1,17 +1,15 @@
 import random
 
-word_list = ["apple", "banana", "cherry", "date", "elderberry"]
-"""word_list: list - The list or woords from which the project will randomy choose a word to start the game"""
-
 class Hangman:
     def __init__(self, word_list, number_of_lives = 5):
-        """Attribtes:"""
+        """Parameters:"""
         self.word_list = word_list
         """word_list: list - A list of words"""
        
         self.number_of_lives = number_of_lives
         """number_of_lives: int - The number of lives the player has at the start of the game"""
-
+        
+        """Attributes:"""
         self.word = random.choice(word_list)
         """word: string - The word to be guessed, chosen randomly from word_list, using random.choice"""
         
@@ -27,7 +25,12 @@ class Hangman:
         self.list_of_guesses = []
         """list_of_guesses: list - A list of the guesses that have already been tried. Initialy set empty"""
 
-    """Methods"""
+    """Methods:
+       check_letter(letter)
+           Checks if the guessed letter is in the word.
+       ask_letter()
+           Asks the user to guess a letter.
+    """
     def  check_guess(self, guess):
       """check_guess - Checks to see if the guess letter is in the word. If so update word_guessed and inform user.
       if not decrement number_of_lives and inform user"""
@@ -56,6 +59,10 @@ class Hangman:
           self.list_of_guesses.append(guess)
           break
 
+"""Functions:
+   play_game(word_list)
+      Start and controle the game. Action termination (win/loose)
+"""
 def play_game(word_list):
   '''This function is used to start and manage the game. It starts and continues successive turns by asking for input.
      It momitores the number of lives left and the number of letters left to find to continue or termiate the game.
@@ -72,7 +79,12 @@ def play_game(word_list):
     else:
          print("Congratulations. You won the game!")
          break
-   
-play_game(word_list)
+ 
+"""Entry point into game
+""" 
+if __name__ == '__main__':
+    word_list = ["apple", "banana", "cherry", "date", "elderberry"]
+    """word_list: list - The list or woords from which the project will randomy choose a word to start the game"""
+    play_game(word_list)
 
 
