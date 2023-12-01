@@ -14,7 +14,9 @@ The project then asks the user to guess a letter ('guess'). This is through the 
 'ask_for_input()' will loop until it receives valid input. Valid input is a single alphabetic letter.
 'ask_for_input()' then checks if the letter is in the word by calling the function 'check_guess(guess)'.
 'check_guess(guess)' reports if the letter is in the word or not.
-
+___
+## Installation Instructions
+The project can be downloaded from this GitHub repository. It comprises a number of python files and this README file. You should download the latest working version of the game (milestone_5.py). All other python files are development files, retained for training purposes.
 ___
 ## User Instructions
 Start the game from the command line by typing 'python milestone_5.py'.
@@ -23,7 +25,7 @@ Continue to follow the prompts, until you win or lose the game.
 You win by correctly completing (guessing), the word. If your guess is incorrect, you lose a life.
 You lose the game by running out of lives, before you have guessed the word.
 
-
+## Project File Structure
 
 ___
 ## License
